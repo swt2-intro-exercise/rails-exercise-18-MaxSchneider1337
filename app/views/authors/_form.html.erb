@@ -1,0 +1,13 @@
+<%= form_with scope: :author do |form| %>
+  <%= form.label 'Vorname' %> <br>
+  <%= form.text_field :first_name %> <br>
+
+  <%= form.label 'Nachname' %> <br>
+  <%= form.text_field :last_name %> <br>
+
+  <%= form.label 'Homepage' %> <br>
+  <%= form.text_field :homepage %> <br>
+
+  <%= form.submit 'Autor erstellen' %>
+
+<% end %>

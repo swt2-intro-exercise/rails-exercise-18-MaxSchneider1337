@@ -1,4 +1,4 @@
-<%= form_with scope: :author do |form| %>
+<%= form_with scope: :author, url: "/authors" do |form| %>
   <%= form.label 'Vorname' %> <br>
   <%= form.text_field :first_name %> <br>
 

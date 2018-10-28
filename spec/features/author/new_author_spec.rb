@@ -23,4 +23,5 @@ describe "New author page", type: :feature do
     find('input[type="submit"]').click
 
   end
+  
 end

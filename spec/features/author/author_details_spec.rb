@@ -9,4 +9,5 @@ describe "author details page", type: :feature do
     expect(page).to have_text(@alan.name)
     expect(page).to have_text(@alan.homepage)
   end
+  
 end

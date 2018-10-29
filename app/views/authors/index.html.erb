@@ -4,13 +4,13 @@
   <tr>
     <th>Name</th>
     <th>Homepage</th>
-    <th></th>
   </tr>
   <% @authors.each do |author| %>
-    <td> <%= link_to author.name, author %> </td>
-    <td> <%= link_to author.homepage, author.homepage %> </td>
+    <tr>
+      <td> <%= link_to author.name, author %> </td>
+      <td> <%= link_to author.homepage, author.homepage %> </td>
+    </tr>
   <% end %>
-  <br>
 </table>
 
 <br>

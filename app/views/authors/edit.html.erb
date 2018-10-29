@@ -1,0 +1,10 @@
+<% provide(:button_text, 'Änderugen speichern') %>
+<% provide(:post_url, author_path(@author)) %>
+<% provide(:method, 'patch') %>
+<h1>Authors#new</h1>
+<% if @author.errors.any? %>
+  <% @author.errors.full_messages.each do |error| %>
+    error: <%= error %> <br>
+  <% end %>
+<% end %>
+<%= render 'form' %>

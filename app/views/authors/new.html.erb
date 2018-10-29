@@ -1,3 +1,6 @@
+<% provide(:button_text, 'neuen Autor erstellen') %>
+<% provide(:post_url, authors_path) %>
+<% provide(:method, 'post') %>
 <h1>Authors#new</h1>
 <% if @author.errors.any? %>
   <% @author.errors.full_messages.each do |error| %>

@@ -32,7 +32,7 @@ describe "New author page", type: :feature do
 
     find('input[type="submit"]').click
 
-    expect(page).to have_text("Fehler: Last name can't be blank")
+    expect(page).to have_text("error: Last name can't be blank")
   end
 
 end

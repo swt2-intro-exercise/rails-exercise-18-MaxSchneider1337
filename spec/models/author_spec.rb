@@ -8,5 +8,15 @@ describe 'author_model', type: :model do
     expect(author.last_name).to eq('Touring')
     expect(author.homepage).to eq('http://wikipedia.org/Alan_Turing')
   end
-  
+
+  it "should not be valid with empty last name" do
+     author = Author.new(first_name: 'Alan', last_name: '', homepage: 'http://wikipedia.org/Alan_Turing')
+     expect(author).to_not be_valid
+  end
+
+  it "should not be valid without last name" do
+     author = Author.new(first_name: 'Alan', homepage: 'http://wikipedia.org/Alan_Turing')
+     expect(author).to_not be_valid
+  end
+
 end

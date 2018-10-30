@@ -13,6 +13,8 @@ describe "author index page" do
     expect(page).to have_link @alan.name, href: author_path(@alan)
     expect(page).to have_link @alan.homepage, href: @alan.homepage
     expect(page).to have_link 'edit', href: edit_author_path(@alan)
+    expect(page).to have_link 'delete', href: author_path(@alan)
+
   end
 
 end

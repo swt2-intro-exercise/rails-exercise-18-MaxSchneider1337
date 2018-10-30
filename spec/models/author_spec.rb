@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'author_model', type: :model do
+describe Author, type: :model do
 
   it "should have a first and second name and an homepage" do
     author = Author.new(first_name: 'Alan', last_name: 'Touring', homepage: 'http://wikipedia.org/Alan_Turing')

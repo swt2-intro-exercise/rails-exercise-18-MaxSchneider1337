@@ -8,7 +8,7 @@ class PapersController < ApplicationController
 
   # GET /papers/1
   def show
-    @paper = Paper.find(params[:id])
+    set_paper
   end
 
   # GET /papers/new
@@ -18,8 +18,7 @@ class PapersController < ApplicationController
 
   # GET /papers/1/edit
   def edit
-    @paper = Paper.find(params[:id])
-
+    set_paper
   end
 
   # POST /papers

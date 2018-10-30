@@ -1,4 +1,4 @@
-<%= form_with scope: :author, url:  yield(:post_url), method: yield(:method) do |form| %>
+<%= form_with(model: @author, local: true) do |form| %>
   <%= form.label 'Vorname' %> <br>
   <%= form.text_field :first_name %> <br>
 

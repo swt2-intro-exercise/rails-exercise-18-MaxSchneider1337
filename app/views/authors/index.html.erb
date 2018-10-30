@@ -9,6 +9,7 @@
     <tr>
       <td> <%= link_to author.name, author %> </td>
       <td> <%= link_to author.homepage, author.homepage %> </td>
+      <td> <%= link_to 'edit' , edit_author_path(author) %> </td>
     </tr>
   <% end %>
 </table>
